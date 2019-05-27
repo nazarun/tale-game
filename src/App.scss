@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 50s linear;
+  height: 8vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  height: 24px;
+  padding: 2px;
+  color: #0c1163;
+  border-radius: 2px;
+  border: 1px solid rgba(4, 4, 32, 0.79);
+  background: rgba(16, 27, 97, 0.38);
+
+}
+
+.item_wrap {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+
+}
+
+.check_btn {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border: 2px solid grey;
+
+  &.item_done {
+    background: green;
+  }
+
+  &.item_not_done {
+    background: rgba(255, 255, 255, 0.22);
+  }
+}
+
+.add_btn {
+  height: 30px;
+
+}
